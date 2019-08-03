@@ -39,6 +39,7 @@ class Song
       if genre_count.has?(genre)
       genre_count[genre]= count + 1
     end
+    end
     genre_count
   end
 
