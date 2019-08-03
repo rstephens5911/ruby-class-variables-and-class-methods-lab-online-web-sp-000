@@ -35,7 +35,7 @@ class Song
   def self.genre_count
     genre_count = {}
     value = 1
-    @@genres do |key, value|
+    genre_counts do |key, value|
       if genre_count.include?(@@genres)
         value += 1
       else
