@@ -48,7 +48,7 @@ class Song
       artist_hash = {}
       value = 1
       @@artists.each do |element|
-        if srtist_hash.include?(element)
+        if artist_hash.include?(element)
           artist_hash[element] = value + 1
         else artist_hash[element] = value
         end
