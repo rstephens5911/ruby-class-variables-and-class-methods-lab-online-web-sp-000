@@ -39,6 +39,7 @@ class Song
       if genre_count.include?(@@genres[key])
         value += 1
       else genre_count[@@genres[key]] = value
+      end
     end
     genre_count
   end
