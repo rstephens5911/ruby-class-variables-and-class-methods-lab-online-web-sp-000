@@ -42,7 +42,6 @@ class Song
         genre_count[@@genres] = value
       end
     end
-    genre_count
   end
 
 end
