@@ -33,15 +33,15 @@ class Song
   end
 
   def self.genre_count
-    genre_count = {}
+    genre_hash = {}
     value = 1
-    @@genres.each do |key|
-      if genre_count[key] == @@genres(key)
+    @@genres.each do |element|
+      if genre_hash[element] == @@genres(element)
         value += 1
-      else genre_count[@@genres(key)] = value
+      else genre_hash[@@genres(element)] = value
       end
     end
-    genre_count
+    genre_hash
   end
 
 end
