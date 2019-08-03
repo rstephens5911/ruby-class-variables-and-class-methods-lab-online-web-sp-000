@@ -37,7 +37,6 @@ class Song
     value = 1
     genre_count.each do |key, value|
       genre_count[@@genres] = value
-      end
     end
   end
 
