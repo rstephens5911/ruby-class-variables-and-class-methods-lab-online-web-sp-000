@@ -41,8 +41,9 @@ class Song
       else
         genre_count[@@genres] = value
       end
+      genre_count
     end
-    genre_count
+    
   end
 
 end
