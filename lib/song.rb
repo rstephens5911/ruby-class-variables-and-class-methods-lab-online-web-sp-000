@@ -34,11 +34,11 @@ class Song
 
   def self.genre_count
     genre_count = {}
-    value = 0
+    value = 1
     @@genres.each do |key, value|
-      if genre_count[key] == genre_count
-          value += 1
-      else genre_count[key] = value
+      if genre_count[key] == nil
+          genre_count[key] = value
+      else genre_count[key] = value + 1
       end
     end
     genre_count
