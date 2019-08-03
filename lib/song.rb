@@ -36,9 +36,9 @@ class Song
     genre_hash = {}
     value = 1
     @@genres.each do |element|
-      if genre_hash[element] == @@genres(element)
-        value += 1
-      else genre_hash[@@genres(element)] = value
+      if genre_hash.include?(element)
+        genre_hash[element] = value + 1
+      else genre_hash[element] = value
       end
     end
     genre_hash
